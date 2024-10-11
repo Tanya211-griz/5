@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="calc.js"></script>
+  <title>Задание 5</title>
+</head>
+<body>
+  <form>
+    <label id="result"></label>
+    <br>
+
+    <label for="good">Товар:</label>
+    <select id="good" name="good" required>
+      <option value="">Товар</option>
+      <option value="1000">Чемодан</option>
+      <option value="250">Сок</option>
+      <option value="2000000">Машина</option>
+      <option value="100">ручка</option>
+    </select>
+
+    <br>
+
+    <label for="amount">Количество товара:</label>
+    <input id="amount" name="amount" min="1" value="1"
+           placeholder="Введите количество необходимого товара" required type="number">
+
+    <button id="button" type="submit">Рассчитать стоимость</button>
+  </form>
+</body>
+</html>
